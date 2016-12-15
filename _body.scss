@@ -1,4 +1,12 @@
+$dkgrn : #2ABF7A;
+
 main{
     background-color: #FFF;
-    color: #2ABF7A;
+    
+}
+
+//incoming messsages from contacts
+#message-box li {
+    background-color: $dkgrn;
+
 }

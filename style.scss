@@ -8,10 +8,15 @@
 @import 'components';
 
 
+// Sass variables
+// I named the colors $dkgrn (dark green), $ltgrn ( light green), and wht (white).
+
+// Dark Green
+$dkgrn : #2ABF7A;
 
 
-body 
-{
-  white-space: pre;
-  font-family: monospace;
- }
+// This one is the light green color.
+$ltgrn : #B7E7D4;
+
+// This one is white.
+$wht : #FFF;
