@@ -2,9 +2,16 @@
 @include foundation-global-styles;
 @include foundation-grid;
 
-
 @import 'header';
 @import 'body';
 @import 'footer';
 @import 'components';
 
+
+
+
+body 
+{
+  white-space: pre;
+  font-family: monospace;
+ }

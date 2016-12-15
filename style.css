@@ -1,6 +1,4 @@
 /*
-Error: File to import not found or unreadable: node_modules/foundation-sites/scss/foundation.
-        on line 1 of style.scss
 
 1: @import 'node_modules/foundation-sites/scss/foundation';
 2: @include foundation-global-styles;
@@ -51,7 +49,3 @@ style.scss:1
 /usr/local/bin/sass:23:in `load'
 /usr/local/bin/sass:23:in `<main>'
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: node_modules/foundation-sites/scss/foundation.\A         on line 1 of style.scss\A \A 1: @import 'node_modules/foundation-sites/scss/foundation';\A 2: @include foundation-global-styles;\A 3: @include foundation-grid;\A 4: \A 5: \A 6: @import 'header';"; }
