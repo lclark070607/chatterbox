@@ -19,7 +19,8 @@ main {
 
     @include grid-column(12);
     @include breakpoint($med-screen) {
-
+        @include grid-column(8);
+        display: block;
     }
 }
 
