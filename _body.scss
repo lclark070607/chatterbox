@@ -8,47 +8,66 @@ $ltgrn : #B7E7D4;
 // This one is white.
 $wht : #FFF;
 
+// This is Light Grey
+$grey : #DBDBDB;
+
 
 $med-screen : 600px;
 
 
-main {
 
+//side bar 
+#side-bar {
     // responsive grid
-    @include grid-row();
+    @include grid-row;
+    @include grid-column(12);
+    display: none;
+    @include breakpoint($med-screen) {
+        @include grid-column(4);
+        height: 100%;
+        display: block;
+        position: fixed;
+        background-color: red;
+}
+}
 
+.message {
+        // responsive grid
+    @include grid-row;
     @include grid-column(12);
     @include breakpoint($med-screen) {
         @include grid-column(8);
         display: block;
-    }
+        position: relative;
+        float: right;
+        list-style-type: none;
+        margin: 0;
+        padding-left: 0;
+
+}
 }
 
-#message-box {
-    background-color: $dkgrn;
-}
+
 //incoming messsages from contacts
-#message-box li {
+#incoming-message li {
     background-color: $dkgrn;
     color: $wht;
     display: inline-block;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
     list-style-type: none;
-}
-
-
-// Message box images
-#message-box li img {
-    display: inline-block;
-    border-radius: 100%;
+ 
 }
 
 //outgoing message box
-#outgoing-message {
-    background-color: $wht;
+#outgoing-message li {
+
+    background-color: $grey;
     display: inline-block;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
+    padding: 0 20px;
     list-style-type: none;
 }
+

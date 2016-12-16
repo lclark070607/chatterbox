@@ -9,6 +9,7 @@
         <title>FrontEnd Chatter</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="normalize.css">
         <script src="chatter.js"></script>
     </head>
     <body>
@@ -17,17 +18,24 @@
             <nav></nav>
         </header>
         <main>
-            <h1>TEST</h1>
-            <ul id="message-box">
-                <li>7:00 pm</li>
-                <li>test message Johnny used to work on the docks/ unions been on strike. He's down on his luck, its tough. So tough</li>
-                <li>Bon Jovi</li>
-            </ul>
-            <ul id="outgoing-message">
-                <li>7:01</li>
-                <li> whooooaaaaah you're a loaded gun/ whooaaah there's no where to run. No one can save me, the damage is done<li>
-                    <li>Me</li>
-            </ul>
+            <!--I made a sidebar section to test repsonsiveness-->
+            <section id="side-bar">
+                <h1>TEST</h1>
+            </section>
+            <!--end of sidebar-->
+            <!--most of this section might get deleted after JS-->
+            <section id="all-message">
+                <ul class="message row collapse" id="incoming-message">
+                    <li>7:00 pm</li>
+                    <li>test message Johnny used to work on the docks/ unions been on strike. He's down on his luck, its tough. So tough</li>
+                    <li>Bon Jovi</li>
+                </ul>
+                <ul class="message row collapse" id="outgoing-message">
+                    <li>7:01</li>
+                    <li> whooooaaaaah you're a loaded gun/ whooaaah there's no where to run. No one can save me, the damage is done</li>
+                        <li>Me</li>
+                </ul>
+            </section>
         </main>
         <footer>
             <div id="username"></div>

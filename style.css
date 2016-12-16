@@ -1288,7 +1288,45 @@ button {
     margin-left: 0;
     margin-right: 0;
     float: left; } }
-main {
+#side-bar {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  float: left;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  display: none; }
+  #side-bar::before, #side-bar::after {
+    content: ' ';
+    display: table; }
+  #side-bar::after {
+    clear: both; }
+  @media screen and (min-width: 40em) {
+    #side-bar {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  #side-bar:last-child:not(:first-child) {
+    float: right; }
+  @media screen and (min-width: 37.5em) {
+    #side-bar {
+      width: 33.33333%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+      height: 100%;
+      display: block;
+      position: fixed;
+      background-color: red; } }
+  @media screen and (min-width: 37.5em) and (min-width: 40em) {
+    #side-bar {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  @media screen and (min-width: 37.5em) {
+      #side-bar:last-child:not(:first-child) {
+        float: right; } }
+
+.message {
   max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
@@ -1296,52 +1334,52 @@ main {
   float: left;
   padding-left: 0.625rem;
   padding-right: 0.625rem; }
-  main::before, main::after {
+  .message::before, .message::after {
     content: ' ';
     display: table; }
-  main::after {
+  .message::after {
     clear: both; }
   @media screen and (min-width: 40em) {
-    main {
+    .message {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
-  main:last-child:not(:first-child) {
+  .message:last-child:not(:first-child) {
     float: right; }
   @media screen and (min-width: 37.5em) {
-    main {
+    .message {
       width: 66.66667%;
       float: left;
       padding-left: 0.625rem;
       padding-right: 0.625rem;
-      display: block; } }
+      display: block;
+      position: relative;
+      float: right;
+      list-style-type: none;
+      margin: 0;
+      padding-left: 0; } }
   @media screen and (min-width: 37.5em) and (min-width: 40em) {
-    main {
+    .message {
       padding-left: 0.9375rem;
       padding-right: 0.9375rem; } }
   @media screen and (min-width: 37.5em) {
-      main:last-child:not(:first-child) {
+      .message:last-child:not(:first-child) {
         float: right; } }
 
-#message-box {
-  background-color: #2ABF7A; }
-
-#message-box li {
+#incoming-message li {
   background-color: #2ABF7A;
   color: #FFF;
   display: inline-block;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
   list-style-type: none; }
 
-#message-box li img {
+#outgoing-message li {
+  background-color: #DBDBDB;
   display: inline-block;
-  border-radius: 100%; }
-
-#outgoing-message {
-  background-color: #FFF;
-  display: inline-block;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
   list-style-type: none; }
 
 body {
