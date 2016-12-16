@@ -1,12 +1,53 @@
+// Dark Green
 $dkgrn : #2ABF7A;
 
-main{
-    background-color: #FFF;
-    
+
+// This one is the light green color.
+$ltgrn : #B7E7D4;
+
+// This one is white.
+$wht : #FFF;
+
+
+$med-screen : 600px;
+
+
+main {
+
+    // responsive grid
+    @include grid-row();
+
+    @include grid-column(12);
+    @include breakpoint($med-screen) {
+
+    }
 }
 
+#message-box {
+    background-color: $dkgrn;
+}
 //incoming messsages from contacts
 #message-box li {
     background-color: $dkgrn;
+    color: $wht;
+    display: inline-block;
+    width: 80%;
+    margin: 0 auto;
+    list-style-type: none;
+}
 
+
+// Message box images
+#message-box li img {
+    display: inline-block;
+    border-radius: 100%;
+}
+
+//outgoing message box
+#outgoing-message {
+    background-color: $wht;
+    display: inline-block;
+    width: 80%;
+    margin: 0 auto;
+    list-style-type: none;
 }

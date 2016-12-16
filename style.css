@@ -1289,9 +1289,48 @@ button {
     margin-right: 0;
     float: left; } }
 main {
-  background-color: #FFF; }
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  float: left;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem; }
+  main::before, main::after {
+    content: ' ';
+    display: table; }
+  main::after {
+    clear: both; }
+  @media screen and (min-width: 40em) {
+    main {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  main:last-child:not(:first-child) {
+    float: right; }
+
+#message-box {
+  background-color: #2ABF7A; }
 
 #message-box li {
-  background-color: #2ABF7A; }
+  background-color: #2ABF7A;
+  color: #FFF;
+  display: inline-block;
+  width: 80%;
+  margin: 0 auto;
+  list-style-type: none; }
+
+#message-box li img {
+  display: inline-block;
+  border-radius: 100%; }
+
+#outgoing-message {
+  background-color: #FFF;
+  display: inline-block;
+  width: 80%;
+  margin: 0 auto;
+  list-style-type: none; }
+
+body {
+  font-family: Sans-Serif; }
 
 /*# sourceMappingURL=style.css.map */
