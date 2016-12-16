@@ -1430,13 +1430,8 @@ footer {
   footer::after {
     clear: both; }
 
-#message {
-  background-color: #2ABF7A;
-  display: block;
-  margin-top: -20px; }
-
 input {
-  width: 33.33333%;
+  width: 100%;
   float: left;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
@@ -1445,7 +1440,6 @@ input {
   border-radius: 15px;
   box-shadow: 1px 1px 1px grey;
   padding: 20px;
-  position: fixed;
   bottom: 15px;
   text-align: center; }
   @media screen and (min-width: 40em) {
@@ -1454,9 +1448,22 @@ input {
       padding-right: 0.9375rem; } }
   input:last-child:not(:first-child) {
     float: right; }
+  @media screen and (min-width: 37.5em) {
+    input {
+      width: 33.33333%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem; } }
+  @media screen and (min-width: 37.5em) and (min-width: 40em) {
+    input {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  @media screen and (min-width: 37.5em) {
+      input:last-child:not(:first-child) {
+        float: right; } }
 
 #send {
-  width: 16.66667%;
+  width: 100%;
   float: left;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
@@ -1467,8 +1474,7 @@ input {
   text-align: center;
   font-size: 1.5em;
   cursor: pointer;
-  margin: 0px;
-  margin-right: 0px;
+  margin: 0;
   font-family: 'karla', sans-serif; }
   @media screen and (min-width: 40em) {
     #send {
@@ -1476,33 +1482,19 @@ input {
       padding-right: 0.9375rem; } }
   #send:last-child:not(:first-child) {
     float: right; }
-
-#send {
-  -webkit-transition-duration: 0.4s;
-  transition-duration: 0.4s; }
-
-#send:hover {
-  background-color: darkgrey;
-  color: white; }
-
-#send {
-  background-color: #FFF;
-  border: 2 px #2ABF7A;
-  border-radius: 15px;
-  color: #2ABF7A;
-  padding: 10px;
-  padding-left: 50px;
-  padding-right: 50px;
-  box-shadow: 1px 1px 1px grey;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  font-size: 2em;
-  text-shadow: 1px 1px grey;
-  cursor: pointer;
-  position: relative;
-  margin-left: 35%;
-  margin-top: 2%; }
+  @media screen and (min-width: 37.5em) {
+    #send {
+      width: 16.66667%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem; } }
+  @media screen and (min-width: 37.5em) and (min-width: 40em) {
+    #send {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  @media screen and (min-width: 37.5em) {
+      #send:last-child:not(:first-child) {
+        float: right; } }
 
 #send {
   -webkit-transition-duration: 0.4s;

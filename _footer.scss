@@ -13,7 +13,7 @@ $grey : #DBDBDB;
 $med-screen : 600px;
 
 footer {
-    @include grid-row;
+    @include grid-row();
     position:fixed;
     left:0px;
     bottom:0px;
@@ -22,28 +22,28 @@ footer {
     background:$dkgrn;
 }
 
-#message {
-    background-color: $dkgrn;
-    display: block;
-}
+input {
+        @include grid-column(12);
+        //styling for small
+        @include breakpoint($med-screen) {
+            @include grid-column(4);
+        }
 
-    input {
-        @include grid-column(4);
         background-color: white;
         color: #B7E7D4;
         border-radius: 15px;
         box-shadow: 1px 1px 1px grey;
         padding: 20px;
-        position: fixed;
         bottom: 15px;
         text-align: center;
-        display: inline;
     }
-
-    
-    
+ 
     #send {
-        @include grid-column(2);
+        @include grid-column(12);
+        //styling for small
+        @include breakpoint($med-screen) {
+            @include grid-column(2)
+        }
         background-color: $wht;
         border-radius: 15px;
         color: $dkgrn;
@@ -51,10 +51,8 @@ footer {
         text-align: center;
         font-size: 1.5em;
         cursor: pointer;
-        margin: 0px; 
-        margin-right: 0px; 
+        margin: 0; 
         font-family: 'karla', sans-serif;
-        display: inline;
     }
 
     #send {
