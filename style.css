@@ -1436,7 +1436,7 @@ footer {
   margin-top: -20px; }
 
 input {
-  width: 58.33333%;
+  width: 33.33333%;
   float: left;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
@@ -1456,7 +1456,7 @@ input {
     float: right; }
 
 #send {
-  width: 25%;
+  width: 16.66667%;
   float: left;
   padding-left: 0.625rem;
   padding-right: 0.625rem;
@@ -1467,8 +1467,8 @@ input {
   text-align: center;
   font-size: 1.5em;
   cursor: pointer;
-  margin: 10px;
-  margin-right: 25px;
+  margin: 0px;
+  margin-right: 0px;
   font-family: 'karla', sans-serif; }
   @media screen and (min-width: 40em) {
     #send {

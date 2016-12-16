@@ -29,7 +29,7 @@ footer {
 }
 
     input {
-        @include grid-column(7);
+        @include grid-column(4);
         background-color: white;
         color: #B7E7D4;
         border-radius: 15px;
@@ -40,8 +40,10 @@ footer {
         text-align: center;
     }
 
+    
+    
     #send {
-        @include grid-column(3);
+        @include grid-column(2);
         background-color: $wht;
         border-radius: 15px;
         color: $dkgrn;
@@ -49,8 +51,8 @@ footer {
         text-align: center;
         font-size: 1.5em;
         cursor: pointer;
-        margin: 10px; 
-        margin-right: 25px; 
+        margin: 0px; 
+        margin-right: 0px; 
         font-family: 'karla', sans-serif;
     }
 
