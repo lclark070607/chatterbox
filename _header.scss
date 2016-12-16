@@ -1,0 +1,37 @@
+// Dark Green
+$dkgrn : #2ABF7A;
+
+// This one is the light green color.
+$ltgrn : #B7E7D4;
+
+// This one is white.
+$wht : #FFF;
+
+// This is Light Grey
+$grey : #DBDBDB;
+
+$med-screen : 600px;
+
+header {
+    @include grid-row;
+
+#top-bar {
+            @include grid-column(12);
+            background-color: $dkgrn;
+            text-align: center;
+            padding: 0px;
+            margin-bottom: 20px;
+        }
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 300px;
+    color: white;
+    text-shadow: 2px 2px grey;
+    font-size: 3em;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+}

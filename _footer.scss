@@ -1,0 +1,65 @@
+// Dark Green
+$dkgrn : #2ABF7A;
+
+// This one is the light green color.
+$ltgrn : #B7E7D4;
+
+// This one is white.
+$wht : #FFF;
+
+// This is Light Grey
+$grey : #DBDBDB;
+
+$med-screen : 600px;
+
+footer {
+    @include grid-row;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    padding: 10px;
+    width:100%;
+    background:$dkgrn;
+}
+
+#message {
+    background-color: $dkgrn;
+    display: block;
+    margin-top: -20px;
+}
+
+    input {
+        @include grid-column(7);
+        background-color: white;
+        color: #B7E7D4;
+        border-radius: 15px;
+        box-shadow: 1px 1px 1px grey;
+        padding: 20px;
+        position: fixed;
+        bottom: 15px;
+        text-align: center;
+    }
+
+    #send {
+        @include grid-column(3);
+        background-color: $wht;
+        border-radius: 15px;
+        color: $dkgrn;
+        box-shadow: 1px 1px 1px grey;
+        text-align: center;
+        font-size: 1.5em;
+        cursor: pointer;
+        margin: 10px; 
+        margin-right: 25px; 
+        font-family: 'karla', sans-serif;
+    }
+
+    #send {
+        -webkit-transition-duration: 0.4s;
+        transition-duration: 0.4s;
+    }
+
+    #send:hover {
+        background-color:darkgrey; 
+        color: white;
+    }

@@ -1,22 +1,25 @@
 <!doctype html>
 <html> 
-
-
-
-
-    <!--Don't forget comments-->
+     <!--Don't forget comments-->
     <head>
         <title>FrontEnd Chatter</title>
         <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="normalize.css">
         <script src="chatter.js"></script>
     </head>
+    
     <body>
+        
         <header>
-            <div id="top-bar"></div>
+            <section id="top-bar">
+                <h1>#frontend chatter</h1>
+            </section>
+
             <nav></nav>
         </header>
+        
         <main>
             <!--I made a sidebar section to test repsonsiveness-->
             <section id="side-bar">
@@ -37,9 +40,11 @@
                 </ul>
             </section>
         </main>
+
         <footer>
-            <div id="username"></div>
             <div id="message"></div>
+                <input type="text" placeholder="Type Your Message">
+                <button id="send">Send</button>
         </footer>
     </body>
 

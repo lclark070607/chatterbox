@@ -1,4 +1,4 @@
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css 
 
 /* Document
    ========================================================================== */
@@ -455,8 +455,8 @@ template {
 /**
  * Add the correct display in IE 10-.
  */
-
+/*
 [hidden] {
   display: none;
-}
+}*/
 Contact GitHub API Training Shop Blog About

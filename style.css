@@ -1288,6 +1288,39 @@ button {
     margin-left: 0;
     margin-right: 0;
     float: left; } }
+header {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto; }
+  header::before, header::after {
+    content: ' ';
+    display: table; }
+  header::after {
+    clear: both; }
+  header #top-bar {
+    width: 100%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    background-color: #2ABF7A;
+    text-align: center;
+    padding: 0px;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 40em) {
+      header #top-bar {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    header #top-bar:last-child:not(:first-child) {
+      float: right; }
+  header h1 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 300px;
+    color: white;
+    text-shadow: 2px 2px grey;
+    font-size: 3em;
+    padding: 0px;
+    margin: 0px; }
+
 #side-bar {
   max-width: 75rem;
   margin-left: auto;
@@ -1355,8 +1388,7 @@ button {
       position: relative;
       float: right;
       list-style-type: none;
-      margin: 0;
-      padding-left: 0; } }
+      margin: 0; } }
   @media screen and (min-width: 37.5em) and (min-width: 40em) {
     .message {
       padding-left: 0.9375rem;
@@ -1381,6 +1413,104 @@ button {
   margin: 0 auto;
   padding: 0 20px;
   list-style-type: none; }
+
+footer {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  padding: 10px;
+  width: 100%;
+  background: #2ABF7A; }
+  footer::before, footer::after {
+    content: ' ';
+    display: table; }
+  footer::after {
+    clear: both; }
+
+#message {
+  background-color: #2ABF7A;
+  display: block;
+  margin-top: -20px; }
+
+input {
+  width: 58.33333%;
+  float: left;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  background-color: white;
+  color: #B7E7D4;
+  border-radius: 15px;
+  box-shadow: 1px 1px 1px grey;
+  padding: 20px;
+  position: fixed;
+  bottom: 15px;
+  text-align: center; }
+  @media screen and (min-width: 40em) {
+    input {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  input:last-child:not(:first-child) {
+    float: right; }
+
+#send {
+  width: 25%;
+  float: left;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  background-color: #FFF;
+  border-radius: 15px;
+  color: #2ABF7A;
+  box-shadow: 1px 1px 1px grey;
+  text-align: center;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin: 10px;
+  margin-right: 25px;
+  font-family: 'karla', sans-serif; }
+  @media screen and (min-width: 40em) {
+    #send {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem; } }
+  #send:last-child:not(:first-child) {
+    float: right; }
+
+#send {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s; }
+
+#send:hover {
+  background-color: darkgrey;
+  color: white; }
+
+#send {
+  background-color: #FFF;
+  border: 2 px #2ABF7A;
+  border-radius: 15px;
+  color: #2ABF7A;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: 1px 1px 1px grey;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 2em;
+  text-shadow: 1px 1px grey;
+  cursor: pointer;
+  position: relative;
+  margin-left: 35%;
+  margin-top: 2%; }
+
+#send {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s; }
+
+#send:hover {
+  background-color: darkgrey;
+  color: white; }
 
 body {
   font-family: Sans-Serif; }
