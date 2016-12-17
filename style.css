@@ -1360,18 +1360,10 @@ header {
         float: right; } }
 
 .message {
-  max-width: 75rem;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
   float: left;
   padding-left: 0.625rem;
   padding-right: 0.625rem; }
-  .message::before, .message::after {
-    content: ' ';
-    display: table; }
-  .message::after {
-    clear: both; }
   @media screen and (min-width: 40em) {
     .message {
       padding-left: 0.9375rem;
@@ -1404,7 +1396,8 @@ header {
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
-  list-style-type: none; }
+  list-style-type: none;
+  border-top: 1px solid #FFF; }
 
 #outgoing-message li {
   background-color: #DBDBDB;
@@ -1413,6 +1406,11 @@ header {
   margin: 0 auto;
   padding: 0 20px;
   list-style-type: none; }
+
+#incoming-message div {
+  background-color: #2ABF7A;
+  color: #B7E7D4;
+  padding-top: 5px; }
 
 footer {
   max-width: 75rem;

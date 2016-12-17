@@ -33,7 +33,6 @@ $med-screen : 600px;
 
 .message {
         // responsive grid
-    @include grid-row;
     @include grid-column(12);
     @include breakpoint($med-screen) {
         @include grid-column(8);
@@ -56,6 +55,7 @@ $med-screen : 600px;
     margin: 0 auto;
     padding: 0 20px;
     list-style-type: none;
+    border-top: 1px solid $wht;
  
 }
 
@@ -68,5 +68,12 @@ $med-screen : 600px;
     margin: 0 auto;
     padding: 0 20px;
     list-style-type: none;
+}
+
+#incoming-message div {
+    background-color: $dkgrn;
+    color: $ltgrn;
+    padding-top: 5px ;
+    
 }
 

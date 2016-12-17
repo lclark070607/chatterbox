@@ -1,51 +1,46 @@
 <!doctype html>
-<html> 
-     <!--Don't forget comments-->
-    <head>
-        <title>FrontEnd Chatter</title>
-        <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="normalize.css">
-        <script src="chatter.js"></script>
-    </head>
-    
-    <body>
-        
-        <header>
-            <section id="top-bar">
-                <h1>#frontend chatter</h1>
-            </section>
+<html>
+<!--Don't forget comments-->
 
-            <nav></nav>
-        </header>
-        
-        <main>
-            <!--I made a sidebar section to test repsonsiveness-->
-            <section id="side-bar">
-                <h1>TEST</h1>
-            </section>
-            <!--end of sidebar-->
-            <!--most of this section might get deleted after JS-->
-            <section id="all-message">
-                <ul class="message" id="incoming-message">
-                    <li>7:00 pm</li>
-                    <li>test message Johnny used to work on the docks/ unions been on strike. He's down on his luck, its tough. So tough</li>
-                    <li>Bon Jovi</li>
-                </ul>
-                <ul class="message" id="outgoing-message">
-                    <li>7:01</li>
-                    <li> whooooaaaaah you're a loaded gun/ whooaaah there's no where to run. No one can save me, the damage is done</li>
-                        <li>Me</li>
-                </ul>
-            </section>
-        </main>
+<head>
+    <title>FrontEnd Chatter</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <script src="chatter.js"></script>
+</head>
 
-        <footer>
-                <input type="text" id="type" placeholder="Type Your Message">
-                <input type="text" id="myname" placeholder="Type Your Name">
-                <button id="send">Send</button>
-        </footer>
-    </body>
+<body>
+
+    <header>
+        <section id="top-bar">
+            <h1>#frontend chatter</h1>
+        </section>
+
+        <nav></nav>
+    </header>
+
+    <main>
+        <!--I made a sidebar section to test repsonsiveness-->
+        <section id="side-bar">
+            <h1>CHATTERS</h1>
+        </section>
+        <!--end of sidebar-->
+        <!--most of this section might get deleted after JS-->
+        <section id="all-message">
+            <ul class="message" id="incoming-message">
+            </ul>
+            <ul class="message" id="outgoing-message">
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <input type="text" id="type" placeholder="Type Your Message">
+        <input type="text" id="myname" placeholder="Type Your Name">
+        <button id="send">Send</button>
+    </footer>
+</body>
 
 </html>
