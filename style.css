@@ -1321,6 +1321,9 @@ header {
     padding: 0px;
     margin: 0px; }
 
+body {
+  background-color: #2ABF7A; }
+
 #side-bar {
   max-width: 75rem;
   margin-left: auto;

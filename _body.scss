@@ -15,7 +15,9 @@ $grey : #DBDBDB;
 $med-screen : 600px;
 
 
-
+body {
+    background-color: $dkgrn;
+}
 //side bar 
 #side-bar {
     // responsive grid
