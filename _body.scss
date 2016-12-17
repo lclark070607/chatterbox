@@ -27,7 +27,9 @@ $med-screen : 600px;
         height: 100%;
         display: block;
         position: fixed;
-        background-color: red;
+        background-color: $dkgrn;
+        list-style: none;
+        color: $ltgrn;
 }
 }
 

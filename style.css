@@ -1350,7 +1350,9 @@ header {
       height: 100%;
       display: block;
       position: fixed;
-      background-color: red; } }
+      background-color: #2ABF7A;
+      list-style: none;
+      color: #B7E7D4; } }
   @media screen and (min-width: 37.5em) and (min-width: 40em) {
     #side-bar {
       padding-left: 0.9375rem;

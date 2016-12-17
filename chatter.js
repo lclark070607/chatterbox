@@ -28,8 +28,9 @@ function getMessage() {
             let users = document.createElement('li');
             users.textContent = response.chats[i].from;
             adopter.appendChild(users);
+            console.log(users)
         }
-
+        
     });
     request.send();
 }
@@ -42,7 +43,7 @@ function addMessage() {
         message: document.querySelector('#type').value,
         from: document.querySelector('#myname').value,
     });
-    document.querySelector('#type').value = '';
+    document.querySelector('#type').value = ' ';
     push.send(body);
 }
 
