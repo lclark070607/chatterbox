@@ -2,13 +2,12 @@ window.addEventListener('load', function () {
     getMessage();
     let submitBtn = document.querySelector('#send');
     submitBtn.addEventListener('click', addMessage);
-    
-    
+
+
     //emojify.run(); 
 
-//    getMessage();
+    //    getMessage();
 });
-
 function getMessage() {
     let request = new XMLHttpRequest();
     request.open('GET', 'http://api.queencityiron.com/chats');
@@ -24,7 +23,7 @@ function getMessage() {
             inUser.textContent = response.chats[i].from + ' :';
             parent.appendChild(inUser);
             parent.appendChild(inMessage);
-            
+
         }
         // let adopter = document.querySelector('#side-bar');
         // for (let i = 0; i < response.chats.length; i++) {
@@ -34,7 +33,7 @@ function getMessage() {
         //     let emoji = require('node-emoji');
         //     console.log('node.js', emoji,heart, 'emoji');
         // }
-        
+
     });
     request.send();
 }
@@ -51,37 +50,28 @@ function addMessage() {
     push.send(body);
 }
 
-
-setInterval(function()
-{   let request = new XMLHttpRequest();
+idCount = 0;
+setInterval(function () {
+    let request = new XMLHttpRequest();
     request.open('GET', 'http://api.queencityiron.com/chats');
     request.addEventListener('load', function () {
         let response = JSON.parse(request.responseText);
-        let parent = document.querySelector('#incoming-message');
         for (let i = 0; i < response.chats.length; i++) {
-            for (let j = 0; j < response.chats.id; j++) {
-                if (response.chats.id < j) {
-                    console.log('something is logging')
-                }
-            }
-            let inMessage = document.createElement('li');
-            let inUser = document.createElement('div');
-            inMessage.textContent = response.chats[i].message;
-            inUser.textContent = response.chats[i].from + ' :';
-            parent.appendChild(inUser);
-            parent.appendChild(inMessage);
-            
+            idCount = response.chats[i].id;
+            console.log('idCount logging');
         }
+        return idCount;
     });
     request.send();
-    console.log('timeout function logging');
+    console.log('timeout request sent');
+    console.log(idCount);
+
 }, 3000);
 
-// function showMyMessage() {
-//     //if (response.chats[i].from === input.value) {
-//         let parent = document.querySelector('#outgoing-message');
-//         let myMessage = document.createElement('li');
-//         myMessage.textContent = input.value;
-//         console.log(myMessage);
-//     }
-
+    function newMessages() {
+        for (i =0; i < response.chats.length; i++) {
+            if (idCount < response.chats.length) {
+                console.log('new message printout');
+            }
+        }console.log('new message');
+    }
