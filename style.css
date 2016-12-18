@@ -1321,10 +1321,10 @@ header {
     margin-top: 8px;
     border: 2px solid #6fbbb7; }
   header h1 {
-    font-family: 'Indie Flower', cursive;
-    font-weight: 300px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100px;
     color: #FFF;
-    text-shadow: 2px 2px grey;
+    text-shadow: 1px 1px grey;
     font-size: 4em;
     padding: 0px;
     margin: 10px; }
@@ -1445,7 +1445,7 @@ footer {
   bottom: 0px;
   padding: 10px;
   width: 100%;
-  background: #FFF; }
+  background: #39474e; }
   footer::before, footer::after {
     content: ' ';
     display: table; }
@@ -1460,7 +1460,8 @@ input {
   background-color: white;
   color: #6fbbb7;
   padding: 25px 40px;
-  text-align: center; }
+  text-align: center;
+  border: 0px; }
   @media screen and (min-width: 40em) {
     input {
       padding-left: 0.9375rem;
@@ -1489,13 +1490,13 @@ input {
   background-color: #FFF;
   color: #6fbbb7;
   text-align: center;
-  font-size: 3em;
-  font-weight: bold;
+  font-size: 2.85em;
+  font-weight: 300px;
   letter-spacing: 2px;
   cursor: pointer;
   margin: 0;
   padding: 8px;
-  font-family: 'Indie Flower', cursive; }
+  font-family: 'Open Sans', sans-serif; }
   @media screen and (min-width: 40em) {
     #send {
       padding-left: 0.9375rem;

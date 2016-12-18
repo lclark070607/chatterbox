@@ -22,7 +22,7 @@ footer {
     bottom:0px;
     padding: 10px;
     width:100%;
-    background:$wht;
+    background:#39474e;
 }
 
 input {
@@ -36,6 +36,7 @@ input {
         color: $dkgrn;
         padding: 25px 40px;
         text-align: center;
+        border: 0px;
     }
 
 #send {
@@ -47,13 +48,13 @@ input {
         background-color: $wht;
         color: $dkgrn;
         text-align: center;
-        font-size: 3em;
-        font-weight: bold;
+        font-size: 2.85em;
+        font-weight: 300px;
         letter-spacing: 2px;
         cursor: pointer;
         margin: 0; 
         padding: 8px;
-        font-family: 'Indie Flower', cursive;
+        font-family: 'Open Sans', sans-serif;
     }
 
     #send {
