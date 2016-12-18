@@ -19,9 +19,10 @@ function getMessage() {
             let inUser = document.createElement('div');
             inMessage.textContent = response.chats[i].message;
             //  + response.chats[i].from;
-            inUser.textContent = ' username: ' + response.chats[i].from;
-            parent.appendChild(inMessage);
+            inUser.textContent = response.chats[i].from + ' :';
             parent.appendChild(inUser);
+            parent.appendChild(inMessage);
+            
         }
         let adopter = document.querySelector('#side-bar');
         for (let i = 0; i < response.chats.length; i++) {

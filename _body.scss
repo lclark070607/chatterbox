@@ -18,6 +18,11 @@ $med-screen : 600px;
 body {
     background-color: $dkgrn;
 }
+
+main {
+    //position: relative;
+    margin-bottom: 50px;
+}
 //side bar 
 #side-bar {
     // responsive grid
@@ -28,12 +33,22 @@ body {
         @include grid-column(4);
         height: 100%;
         display: block;
-        position: fixed;
+        position: relative;
         background-color: $dkgrn;
         list-style: none;
         color: $ltgrn;
+        //border-top: 1px solid $wht;
+       // border-right: 1px solid $wht;
+        font-weight: 900;
+    }
 }
+
+
+#side-bar li {
+    padding: 10px auto;
+
 }
+
 
 .message {
         // responsive grid
@@ -44,7 +59,7 @@ body {
         position: relative;
         float: right;
         list-style-type: none;
-        margin: 0;
+        margin: 0 0 25% 0;
 
 }
 }
@@ -57,9 +72,9 @@ body {
     display: inline-block;
     width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 20px 20px 20px;
     list-style-type: none;
-    border-top: 1px solid $wht;
+
  
 }
 
@@ -78,6 +93,8 @@ body {
     background-color: $dkgrn;
     color: $ltgrn;
     padding-top: 5px ;
+    font-weight: 900;
     
 }
+
 
