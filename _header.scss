@@ -17,16 +17,17 @@ header {
 
 #top-bar {
             @include grid-column(12);
-            background-color: $dkgrn;
+            background-color: $wht;
             text-align: center;
             padding: 0px;
             margin-bottom: 20px;
+            margin-top: 5px;
         }
 
 h1 {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Indie Flower', cursive;
     font-weight: 300px;
-    color: white;
+    color: $dkgrn;
     text-shadow: 2px 2px grey;
     font-size: 3em;
     padding: 0px;

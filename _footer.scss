@@ -12,6 +12,8 @@ $grey : #DBDBDB;
 
 $med-screen : 600px;
 
+
+
 footer {
     @include grid-row();
     position:fixed;
@@ -19,40 +21,39 @@ footer {
     bottom:0px;
     padding: 10px;
     width:100%;
-    background:$dkgrn;
+    background:$wht;
+    margin-bottom: 5px;
 }
 
 input {
         @include grid-column(12);
         //styling for small
         @include breakpoint($med-screen) {
-            @include grid-column(4);
+            @include grid-column(9.5);
         }
 
         background-color: white;
-        color: #B7E7D4;
-        border-radius: 15px;
-        box-shadow: 1px 1px 1px grey;
-        padding: 20px;
-        bottom: 15px;
+        color: $dkgrn;
+        padding: 25px 40px;
         text-align: center;
     }
- 
-    #send {
+
+#send {
         @include grid-column(12);
         //styling for small
         @include breakpoint($med-screen) {
-            @include grid-column(2)
+            @include grid-column(2.5)
         }
         background-color: $wht;
-        border-radius: 15px;
         color: $dkgrn;
-        box-shadow: 1px 1px 1px grey;
         text-align: center;
-        font-size: 1.5em;
+        font-size: 3em;
+        font-weight: bold;
+        letter-spacing: 2px;
         cursor: pointer;
         margin: 0; 
-        font-family: 'karla', sans-serif;
+        padding: 8px;
+        font-family: 'Indie Flower', cursive;
     }
 
     #send {
@@ -61,6 +62,6 @@ input {
     }
 
     #send:hover {
-        background-color:darkgrey; 
+        background-color:$dkgrn; 
         color: white;
     }

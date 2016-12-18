@@ -1302,10 +1302,11 @@ header {
     float: left;
     padding-left: 0.625rem;
     padding-right: 0.625rem;
-    background-color: #2ABF7A;
+    background-color: #FFF;
     text-align: center;
     padding: 0px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    margin-top: 5px; }
     @media screen and (min-width: 40em) {
       header #top-bar {
         padding-left: 0.9375rem;
@@ -1313,9 +1314,9 @@ header {
     header #top-bar:last-child:not(:first-child) {
       float: right; }
   header h1 {
-    font-family: 'Karla', sans-serif;
+    font-family: 'Indie Flower', cursive;
     font-weight: 300px;
-    color: white;
+    color: #2ABF7A;
     text-shadow: 2px 2px grey;
     font-size: 3em;
     padding: 0px;
@@ -1433,7 +1434,8 @@ footer {
   bottom: 0px;
   padding: 10px;
   width: 100%;
-  background: #2ABF7A; }
+  background: #FFF;
+  margin-bottom: 5px; }
   footer::before, footer::after {
     content: ' ';
     display: table; }
@@ -1446,11 +1448,8 @@ input {
   padding-left: 0.625rem;
   padding-right: 0.625rem;
   background-color: white;
-  color: #B7E7D4;
-  border-radius: 15px;
-  box-shadow: 1px 1px 1px grey;
-  padding: 20px;
-  bottom: 15px;
+  color: #2ABF7A;
+  padding: 25px 40px;
   text-align: center; }
   @media screen and (min-width: 40em) {
     input {
@@ -1460,7 +1459,7 @@ input {
     float: right; }
   @media screen and (min-width: 37.5em) {
     input {
-      width: 33.33333%;
+      width: 79.16667%;
       float: left;
       padding-left: 0.625rem;
       padding-right: 0.625rem; } }
@@ -1478,14 +1477,15 @@ input {
   padding-left: 0.625rem;
   padding-right: 0.625rem;
   background-color: #FFF;
-  border-radius: 15px;
   color: #2ABF7A;
-  box-shadow: 1px 1px 1px grey;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 2px;
   cursor: pointer;
   margin: 0;
-  font-family: 'karla', sans-serif; }
+  padding: 8px;
+  font-family: 'Indie Flower', cursive; }
   @media screen and (min-width: 40em) {
     #send {
       padding-left: 0.9375rem;
@@ -1494,7 +1494,7 @@ input {
     float: right; }
   @media screen and (min-width: 37.5em) {
     #send {
-      width: 16.66667%;
+      width: 20.83333%;
       float: left;
       padding-left: 0.625rem;
       padding-right: 0.625rem; } }
@@ -1511,7 +1511,7 @@ input {
   transition-duration: 0.4s; }
 
 #send:hover {
-  background-color: darkgrey;
+  background-color: #2ABF7A;
   color: white; }
 
 body {
