@@ -3,6 +3,8 @@ window.addEventListener('load', function () {
     let submitBtn = document.querySelector('#send');
     submitBtn.addEventListener('click', addMessage);
     
+    
+    emojify.run(); 
 
 //    getMessage();
 });
@@ -29,7 +31,8 @@ function getMessage() {
             let users = document.createElement('li');
             users.textContent = response.chats[i].from;
             adopter.appendChild(users);
-            console.log(users)
+            let emoji = require('node-emoji');
+            console.log('node.js', emoji,heart, 'emoji');
         }
         
     });
