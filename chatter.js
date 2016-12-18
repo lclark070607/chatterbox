@@ -4,7 +4,7 @@ window.addEventListener('load', function () {
     submitBtn.addEventListener('click', addMessage);
     
     
-    emojify.run(); 
+    //emojify.run(); 
 
 //    getMessage();
 });
@@ -26,14 +26,14 @@ function getMessage() {
             parent.appendChild(inMessage);
             
         }
-        let adopter = document.querySelector('#side-bar');
-        for (let i = 0; i < response.chats.length; i++) {
-            let users = document.createElement('li');
-            users.textContent = response.chats[i].from;
-            adopter.appendChild(users);
-            let emoji = require('node-emoji');
-            console.log('node.js', emoji,heart, 'emoji');
-        }
+        // let adopter = document.querySelector('#side-bar');
+        // for (let i = 0; i < response.chats.length; i++) {
+        //     let users = document.createElement('li');
+        //     users.textContent = response.chats[i].from;
+        //     adopter.appendChild(users);
+        //     let emoji = require('node-emoji');
+        //     console.log('node.js', emoji,heart, 'emoji');
+        // }
         
     });
     request.send();
@@ -50,6 +50,32 @@ function addMessage() {
     document.querySelector('#type').value = ' ';
     push.send(body);
 }
+
+
+setInterval(function()
+{   let request = new XMLHttpRequest();
+    request.open('GET', 'http://api.queencityiron.com/chats');
+    request.addEventListener('load', function () {
+        let response = JSON.parse(request.responseText);
+        let parent = document.querySelector('#incoming-message');
+        for (let i = 0; i < response.chats.length; i++) {
+            for (let j = 0; j < response.chats.id; j++) {
+                if (response.chats.id < j) {
+                    console.log('something is logging')
+                }
+            }
+            let inMessage = document.createElement('li');
+            let inUser = document.createElement('div');
+            inMessage.textContent = response.chats[i].message;
+            inUser.textContent = response.chats[i].from + ' :';
+            parent.appendChild(inUser);
+            parent.appendChild(inMessage);
+            
+        }
+    });
+    request.send();
+    console.log('timeout function logging');
+}, 3000);
 
 // function showMyMessage() {
 //     //if (response.chats[i].from === input.value) {
