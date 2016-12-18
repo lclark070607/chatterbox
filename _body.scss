@@ -1,5 +1,6 @@
 // Dark Green
-$dkgrn : #2ABF7A;
+$dkgrn :#6fbbb7;
+//  #2ABF7A;
 
 
 // This one is the light green color.
@@ -43,7 +44,6 @@ main {
     }
 }
 
-
 #side-bar li {
     padding: 10px auto;
 
@@ -67,13 +67,17 @@ main {
 
 //incoming messsages from contacts
 #incoming-message li {
-    background-color: $dkgrn;
-    color: $wht;
+    background-color: $wht;
+    color: darkgrey;
+    font-weight: 600px;
+    text-shadow: 1px black;
     display: inline-block;
     width: 100%;
     margin: 0 auto;
-    padding: 0 20px 20px 20px;
     list-style-type: none;
+    border-bottom: 1px solid #D3D3D3;
+    padding: 20px 10px;
+    border-radius: 3px;
 
  
 }

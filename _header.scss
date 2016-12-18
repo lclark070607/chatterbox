@@ -1,5 +1,6 @@
 // Dark Green
-$dkgrn : #2ABF7A;
+$dkgrn : #6fbbb7;
+// #2ABF7A;
 
 // This one is the light green color.
 $ltgrn : #B7E7D4;
@@ -17,21 +18,34 @@ header {
 
 #top-bar {
             @include grid-column(12);
-            background-color: $wht;
+            background-color: #39474e;
             text-align: center;
             padding: 0px;
             margin-bottom: 20px;
-            margin-top: 5px;
+            display: flex;
+            justify-content: space-around;
         }
+
+img {
+    width: 100px;
+    height: 100px;
+    // position: absolute;
+    background: #F7F9F9;
+    margin-top: 8px;
+    border: 2px solid $dkgrn;
+    // top: 100px;
+    // left: 140px;
+    // border-radius: 50%;
+}
 
 h1 {
     font-family: 'Indie Flower', cursive;
     font-weight: 300px;
-    color: $dkgrn;
+    color: $wht;
     text-shadow: 2px 2px grey;
-    font-size: 3em;
+    font-size: 4em;
     padding: 0px;
-    margin: 0px;
+    margin: 10px;
 
 }
 
