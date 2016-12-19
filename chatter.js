@@ -52,14 +52,14 @@ function getMessage() {
             parent.appendChild(inMessage);
 
         }
-        // let adopter = document.querySelector('#side-bar');
-        // for (let i = 0; i < response.chats.length; i++) {
-        //     let users = document.createElement('li');
-        //     users.textContent = response.chats[i].from;
-        //     adopter.appendChild(users);
+         let adopter = document.querySelector('#side-bar');
+         for (let i = 0; i < response.chats.length; i++) {
+             let users = document.createElement('li');
+             users.textContent = response.chats[i].from;
+             adopter.appendChild(users);
         //     let emoji = require('node-emoji');
         //     console.log('node.js', emoji,heart, 'emoji');
-        // }
+         }
 
     });
     request.send();

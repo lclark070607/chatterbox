@@ -1,13 +1,13 @@
 //global var. keeps count of amount of messages
 let idCount = 0;
-let currentIdCount = 0;
+let initialIdCount = 0;
 window.addEventListener('load', function() {
     getIdCount();
 
 });
 
 
-console.log(currentIdCount +' current id count up top');
+console.log(initialIdCount +' current id count up top');
 // timed update function
 setInterval(function () {
 
@@ -17,14 +17,29 @@ setInterval(function () {
         let response = JSON.parse(request.responseText);
         for (i = 0; i< response.chats.length; i++) 
             idCount = response.chats[i].id;
-            if (idCount > currentIdCount) {
-                currentIdCount++;
-                
+            if (idCount > initialIdCount) {
+                initialIdCount++;
+//this prints to dome in outgoing-message box. currently getting error message. 
+// console.log(response.chats[i].id);         
+//                 if (response.chats[i].id === 'Louise') {
+// console.log(response.chats[i].from);
+//                     let parent = document.querySelector('#outgoing-message');
+//         for (let i = initialIdCount; i < response.chats.length; i++) {
+//             let inMessage = document.createElement('li');
+//             let inUser = document.createElement('div');
+//             inMessage.textContent = response.chats[i].message;
+//             //  + response.chats[i].from;
+//             inUser.textContent = response.chats[i].from + ' :';
+//             parent.appendChild(inUser);
+//             parent.appendChild(inMessage);
+//         }    
+
+
+                // }else {
             
 //print to dom code starts here
-
             let parent = document.querySelector('#incoming-message');
-        for (let i = currentIdCount; i < response.chats.length; i++) {
+        for (let i = initialIdCount; i < response.chats.length; i++) {
             let inMessage = document.createElement('li');
             let inUser = document.createElement('div');
             inMessage.textContent = response.chats[i].message;
@@ -32,15 +47,12 @@ setInterval(function () {
             inUser.textContent = response.chats[i].from + ' :';
             parent.appendChild(inUser);
             parent.appendChild(inMessage);
-        }
-        
+             
+                } 
 //code ends here    
 }
-            
-            //might need to change this counter
             let user = response.chats[idCount];
             newMessage(user); 
-            //console.log(response.chats[idCount].from +' this is response.chats[0]')
 
     });
     request.send();
@@ -54,21 +66,20 @@ function newMessage(str) {
     let name = document.createElement('li');
     name.textContent = str.from +' this is the new messages '+ str.message;
     let parent = document.querySelector('#incoming-messages')
-    //console.log(str.from +' new message section ' + str.message)
 }
 
-
-
+// this function logs the id count when the page is initially loaded. this number 
+// is then compared to idCount which gets updated every refresh interval.
 function getIdCount() {
     let request = new XMLHttpRequest();
     request.open('GET', 'http://api.queencityiron.com/chats');
     request.addEventListener('load', function () {
         let response = JSON.parse(request.responseText);
         for (i = 0; i< response.chats.length; i++) { 
-            currentIdCount = response.chats[i].id;
+            initialIdCount = response.chats[i].id;
 console.log(response.chats[i].id +' bottom id number');
         }
     });
     request.send();
 }
-console.log('current id count ' +currentIdCount);
+console.log('current id count ' +initialIdCount);
