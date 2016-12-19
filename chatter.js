@@ -50,14 +50,14 @@ function addMessage() {
     push.send(body);
 }
 
-    function newMessages() {
-            let request = new XMLHttpRequest();
-    request.open('GET', 'http://api.queencityiron.com/chats');
-            let response = JSON.parse(request.responseText);
-        for (let i =0; i < response.chats.length; i++) {
-            if (idCount < response.chats.length) {
-                console.log('new message printout');
-            }
-        }console.log('new message');
-    }
+    // function newMessages() {
+    //         let request = new XMLHttpRequest();
+    // request.open('GET', 'http://api.queencityiron.com/chats');
+    //         let response = JSON.parse(request.responseText);
+    //     for (let i =0; i < response.chats.length; i++) {
+    //         if (idCount < response.chats.length) {
+    //             console.log('new message printout');
+    //         }
+    //     }console.log('new message');
+    // }
 
