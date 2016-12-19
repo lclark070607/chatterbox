@@ -37,7 +37,8 @@ main {
         position: relative;
         background-color: $dkgrn;
         list-style: none;
-        color: $ltgrn;
+        color: $wht;
+        text-shadow: 2px 2px 2px #39474e;
         //border-top: 1px solid $wht;
        // border-right: 1px solid $wht;
         font-weight: 900;
@@ -49,6 +50,10 @@ main {
 
 }
 
+
+#all-message {
+    border: 2px 2px solid darkgray;
+}
 
 .message {
         // responsive grid
@@ -74,10 +79,12 @@ main {
     display: inline-block;
     width: 100%;
     margin: 0 auto;
+    margin-right: 20px;
     list-style-type: none;
     border-bottom: 1px solid #D3D3D3;
     padding: 20px 10px;
     border-radius: 3px;
+    border: solid 2px #39474e;
 
  
 }
@@ -89,6 +96,7 @@ main {
     display: inline-block;
     width: 100%;
     margin: 0 auto;
+    margin-right: 20px;
     padding: 0 20px;
     list-style-type: none;
 }
@@ -96,8 +104,9 @@ main {
 #incoming-message div {
     background-color: $dkgrn;
     color: $ltgrn;
-    padding-top: 5px ;
-    font-weight: 900;
+    text-shadow: 2px 2px 2px #39474e;
+    padding-top: 20px ;
+    font-weight: 700;
     
 }
 

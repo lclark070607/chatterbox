@@ -1366,7 +1366,7 @@ main {
       position: relative;
       background-color: #6fbbb7;
       list-style: none;
-      color: #B7E7D4;
+      color: #FFF;
       text-shadow: 2px 2px 2px #39474e;
       font-weight: 900; } }
   @media screen and (min-width: 37.5em) and (min-width: 40em) {
@@ -1542,4 +1542,4 @@ body {
   display: inline-block;
   margin-bottom: -0.25em; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style:css.map */
