@@ -8,6 +8,33 @@ window.addEventListener('load', function () {
 
     //    getMessage();
 });
+// I am texting a scrolltop function.
+
+// let messageFeed = document.getElementById("all-message");
+// function wScroll(){
+//         console.log(messageFeed.scrollTop);
+        
+//         messageHeight = messageFeed.offsetHeight;
+    
+//         let heightToScroll = (130);
+//         let header = document.getElementById('header');
+    
+//         if(messageFeed.scrollTop > heightToScroll){
+//             header.className = "header header-scrolled"
+//             messageFeed.className = "all-message all-message-scrolled"
+//         }
+//         else if(messageFeed.scrollTop < 1){
+//             header.className = "header header-unscrolled"
+//             messageFeed.className = "all-message"
+//         }
+//      };
+    
+//     messageFeed.addEventListener("scroll", wScroll, false);
+    
+//     wScroll();
+//     console.log(messageFeed);
+//end of testing scrolltop function.
+
 function getMessage() {
     let request = new XMLHttpRequest();
     request.open('GET', 'http://api.queencityiron.com/chats');
